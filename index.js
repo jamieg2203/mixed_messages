@@ -50,12 +50,9 @@ const sections = [
     ],
 ]
 
-const messageSec1 = sections[0][Math.floor(Math.random(sections[0].length))];
-const messageSec2 = sections[1][Math.floor(Math.random(sections[1].length))];
-const messageSec3 = sections[2][Math.floor(Math.random(sections[2].length))];
-const messageSec4 = sections[3][Math.floor(Math.random(sections[3].length))];
+const messageSec1 = sections[0][Math.floor(Math.random() * sections[0].length)];
+const messageSec2 = sections[1][Math.floor(Math.random() * sections[1].length)];
+const messageSec3 = sections[2][Math.floor(Math.random() * sections[2].length)];
+const messageSec4 = sections[3][Math.floor(Math.random() * sections[3].length)];
 
 console.log(`${messageSec1} ${messageSec2} ${messageSec3} the ${messageSec4}`);
-
-
-console.log(Math.floor(sections[2].length))
